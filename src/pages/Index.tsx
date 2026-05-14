@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 
-const AUTHOR = "Автор";
-
 const poems = [
   {
     title: "Мамины руки",
+    author: "Игорь Гудзенко",
     lines: [
       "Мамины руки — тепло и забота,",
       "В них столько нежности, столько работы.",
@@ -22,6 +21,7 @@ const poems = [
   },
   {
     title: "Весна похожа на маму",
+    author: "Горина Татьяна",
     lines: [
       "Весна похожа на маму —",
       "Приходит тихо, без шума,",
@@ -39,6 +39,7 @@ const poems = [
   },
   {
     title: "Самый лучший человек",
+    author: "Олеся Бондарук",
     lines: [
       "Самый лучший человек —",
       "Это мама на всю жизнь.",
@@ -290,7 +291,7 @@ function PoemSlide({
                 transition: "opacity 0.8s ease 0.8s",
               }}
             >
-              — {AUTHOR}
+              — {poem.author}
             </p>
 
             <div className="flex items-center gap-3 mt-4">

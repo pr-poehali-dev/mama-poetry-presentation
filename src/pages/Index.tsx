@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+const AUTHOR = "Автор";
+
 const poems = [
   {
     title: "Мамины руки",
@@ -280,7 +282,18 @@ function PoemSlide({
               )}
             </div>
 
-            <div className="flex items-center gap-3 mt-8">
+            <p
+              className="font-caveat text-xl mt-6 text-right"
+              style={{
+                color: poem.accent,
+                opacity: visible ? 0.75 : 0,
+                transition: "opacity 0.8s ease 0.8s",
+              }}
+            >
+              — {AUTHOR}
+            </p>
+
+            <div className="flex items-center gap-3 mt-4">
               <LeafBranch color="#7cb342" />
               <FloralOrnament color={poem.accent} size={24} />
               <LeafBranch color="#7cb342" flip />

@@ -181,7 +181,7 @@ function TitleSlide({ onNext }: { onNext: () => void }) {
           className="font-caveat text-2xl text-rose-500 mb-2"
           style={{ opacity: visible ? 1 : 0, transition: "opacity 1.5s ease 0.9s" }}
         >
-          Автор стихов: [Ваше имя]
+          Автор презентации: Кира Пластун
         </p>
         <p
           className="font-cormorant text-lg text-rose-400 italic"
